@@ -11,13 +11,11 @@
 	</head>
 	<body>
 		<a-scene embedded arjs>
-			<a-entity>
-				<a-entity gltf-model="./models/doc_animated.gltf"></a-entity>
-			</a-entity>
-			<a-marker-camera
-				preset="hiro"
-				url="./markers/hiro.patt"
-			></a-marker-camera>
+			<a-marker-camera preset="hiro" url="./markers/hiro.patt">
+				<a-entity>
+					<a-entity gltf-model="./models/doc_animated.gltf"></a-entity>
+				</a-entity>
+			</a-marker-camera>
 		</a-scene>
 	</body>
 </html>
