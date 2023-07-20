@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AFrame Tracking</title>
+
+		<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+		<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body>
+		<a-scene>
+			<a-marker id="marker" preset="hiro" url="./markers/hiro.patt"></a-marker>
+			<a-assets>
+				<a-asset-items id="doc" src="models/doc_animated.gltf"></a-asset-items>
+			</a-assets>
+			<a-entity gltf-model="#doc"></a-entity>
+			<a-camera static />
+		</a-scene>
+	</body>
+</html>
