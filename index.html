@@ -13,13 +13,12 @@
 	</head>
 	<body>
 		<a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+			<a-assets>
+				<a-asset-item id="object" src="models/chairAF.obj"></a-asset-item>
+			</a-assets>
 			<a-marker preset="hiro">
-				<a-assets>
-					<a-asset-item id="object" src="models/chairAF.obj"></a-asset-item>
-				</a-assets>
+				<a-obj-model src="#object"></a-obj-model>
 			</a-marker>
-
-			<a-obj-model src="#object"></a-obj-model>
 
 			<a-entity camera></a-entity>
 		</a-scene>
