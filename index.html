@@ -13,11 +13,11 @@
 	</head>
 	<body>
 		<a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-			<a-marker id="marker" preset="hiro" listener> </a-marker>
+			<a-marker preset="hiro">
+				<a-box id="target" material="opacity: 0.5;"></a-box>
+			</a-marker>
 
-			<a-box id="target" material="opacity: 0.5;"></a-box>
-
-			<a-camera-static />
-		</a-scene>
+            <a-entity camera></a-entity>
+        </a-scene>
 	</body>
 </html>
