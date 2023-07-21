@@ -14,10 +14,14 @@
 	<body>
 		<a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 			<a-marker preset="hiro">
-				<a-box id="target" material="opacity: 0.5;"></a-box>
+				<a-assets>
+					<a-asset-item id="object" src="models/chairAF.obj"></a-asset-item>
+				</a-assets>
 			</a-marker>
 
-            <a-entity camera></a-entity>
-        </a-scene>
+			<a-obj-model src="#object"></a-obj-model>
+
+			<a-entity camera></a-entity>
+		</a-scene>
 	</body>
 </html>
